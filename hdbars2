@@ -86,8 +86,8 @@ exit 1
 # Parse the command line params
 REALTIME="-re"
 LINE_1=`hostname -s`
-FRAME_RATE=60000/1001
-DROPFRAME=";"
+FRAME_RATE=25000/1001
+DROPFRAME=":"
 ENC_PROFILE="testpattern"
 while [ ${1:0:1} == "-" ]
 do
@@ -135,8 +135,8 @@ OUTPUT_FORMAT=$1
 TARGET=$2
 
 # Various Geometry Things
-SW=1280
-SH=720
+SW=1920
+SH=1080
 BOX_W=540
 BOX_H=178
 SHUTTLE_W=45
